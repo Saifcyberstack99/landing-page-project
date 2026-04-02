@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spice Haven Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <h2 class="logo">Spice Haven</h2>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Fresh Taste, Warm Atmosphere</h1>
+        <p>Welcome to Spice Haven — where delicious food, premium ambiance, and unforgettable dining experiences come together.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn primary-btn">View Menu</a>
+          <a href="#contact" class="btn secondary-btn">Book Table</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Restaurant Food">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Popular Dishes</h2>
+        <p>Handpicked customer favorites made with love and flavor.</p>
+      </div>
+      <div class="menu-grid">
+        <!-- Pizza -->
+   <div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1548365328-2c1e18e7c610?auto=format&fit=crop&w=900&q=80" alt="Pizza">
+  <h3>Cheese Pizza</h3>
+  <p>Loaded with mozzarella, herbs, and fresh toppings.</p>
+  <span>Rs. 1490</span>
+</div>
+
+<div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Beef Burger">
+  <h3>Beef Burger</h3>
+  <p>Juicy grilled patty served with crispy fries.</p>
+  <span>Rs. 1190</span>
+</div>
+
+<div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=80" alt="Pasta">
+  <h3>Creamy Pasta</h3>
+  <p>Rich white sauce pasta with mushrooms and cheese.</p>
+  <span>Rs. 1390</span>
+</div>
+
+<div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Grilled Steak">
+  <h3>Grilled Steak</h3>
+  <p>Perfectly grilled steak with mashed potatoes.</p>
+  <span>Rs. 2490</span>
+</div>
+
+<div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1601924928342-5986830c68d8?auto=format&fit=crop&w=900&q=80" alt="Chicken Biryani">
+  <h3>Chicken Biryani</h3>
+  <p>Traditional desi biryani with rich spices and aroma.</p>
+  <span>Rs. 990</span>
+</div>
+
+<div class="menu-card reveal">
+  <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=80" alt="Mojito">
+  <h3>Fresh Mojito</h3>
+  <p>Refreshing mint mojito served chilled.</p>
+  <span>Rs. 490</span>
+</div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container about-content">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Restaurant Interior">
+      </div>
+      <div class="about-text reveal">
+        <h2>About Our Restaurant</h2>
+        <p>Spice Haven is a modern restaurant offering a perfect mix of local and international flavors. We focus on fresh ingredients, beautiful presentation, and excellent customer service.</p>
+        <p>Whether you're here for family dinner, lunch with friends, or a romantic evening, we make every meal memorable.</p>
+        <button class="btn primary-btn" id="aboutBtn">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title">
+        <h2>Customer Reviews</h2>
+        <p>See what our happy customers say about us.</p>
+      </div>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <p>"Amazing food and beautiful environment. Loved the pasta!"</p>
+          <h4>- Sarah</h4>
+        </div>
+        <div class="review-card reveal">
+          <p>"The burger was juicy and fresh. Definitely visiting again."</p>
+          <h4>- Ahmed</h4>
+        </div>
+        <div class="review-card reveal">
+          <p>"One of the best restaurants in town. Great service too."</p>
+          <h4>- Areeba</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation / Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Book a Table</h2>
+        <p>Reserve your seat and enjoy a perfect dining experience.</p>
+      </div>
+      <form class="contact-form" id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <input type="number" id="people" placeholder="Number of People">
+        <textarea id="message" rows="5" placeholder="Special Request"></textarea>
+        <button type="submit" class="btn primary-btn">Reserve Now</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Spice Haven Restaurant. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
